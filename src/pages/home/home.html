@@ -1,6 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+        <ion-icon name="flower" item-start></ion-icon>
+        &nbsp;Feo&nbsp;
+        <ion-icon name="flower" item-start></ion-icon>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -9,19 +13,38 @@
 <ion-content padding>
 
 
-
-
-
     <ion-card>
         <ion-card-header>
-          Discovery
+          Music Nearby
         </ion-card-header>
 
         <ion-card-content>
-
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="musical-notes" item-start></ion-icon>
+                        POWER | West, Kanye
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="musical-notes" item-start></ion-icon>
+                        Bad | Jackson, Michael
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="musical-notes" item-start></ion-icon>
+                        Under the Bridge | Red Hot Chilli Peppers
+                </ion-item>
+            </ion-list>
 
         </ion-card-content>
     </ion-card>
 <div #map id="map"></div>
+
+<ion-card>
+    <ion-card-header>
+        <ion-label> Map Filters </ion-label>
+        <ion-toggle name="wakawaka" [(ngModel)]="wakawaka"></ion-toggle>
+        <ion-toggle name="wakawaka2" [(ngModel)]="wakawaka2"></ion-toggle>
+        <ion-toggle name="wakawaka3" [(ngModel)]="wakawaka3"></ion-toggle>
+    </ion-card-header>
+</ion-card>
 
 </ion-content>
